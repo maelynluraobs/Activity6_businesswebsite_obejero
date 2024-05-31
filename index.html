@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Haven</title>
+    <title>Library</title>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
@@ -20,7 +20,7 @@
           <ul class="nav__links">
             <li><a class="nav__link" href="#">Home</a></li>
             <li><a class="nav__link" href="#">Contact</a></li>
-            <li><a class="nav__link nav__link--primary" href="#">Books</a></li>
+            <li><a class="nav__link nav__link--primary" href="books.html">Books</a></li>
           </ul>
         <button class="btn__menu" onclick="openMenu()"> 
             <i class="fas fa-bars"></i>
@@ -29,11 +29,16 @@
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <i class="fas fa-times"></i>
             </button>
-            <ul class="menu__links">
-                <li class="menu__list"><a href="#" class="menu__link"  onclick="closeMenu()">Home</a></li>
-                <li class="menu__list"><a href="#features" class="menu__link"  onclick="closeMenu()">Books</a></li>
-                <li class="menu__list"><a href="#" class="menu__link no-cursor"  onclick="closeMenu()" >Contact</a></li>
-            </ul>
+          <nav>
+      <div class="nav__container">
+        <img class="logo" src="./assets/Library.svg" alt="Library Logo" />
+        <ul class="nav__links">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+          <li><a class="nav__link nav__link--primary" href="books.html">Books</a></li>
+        </ul>
+      </div>
+    </nav>
             
         </div>
     </div>
@@ -45,7 +50,7 @@
           <div class="header__description">
             <h1>From the Philippines best selling books. </h1>
             <h2>
-              Find your dream book with <span class="purple">Book Haven</span>
+              Find your dream book with <span class="purple">Library</span>
             </h2>
            <a href="#features"> <button class="btn">Browse books</button></a>
           </div>
@@ -61,7 +66,7 @@
         <div class="container">
           <div class="row">
             <h2 class="section__title">
-              Why choose <span class="purple">Book Haven</span>
+              Why choose <span class="purple">Library</span>
             </h2>
             <div class="highlight__wrapper">
               <div class="highlight">
@@ -70,7 +75,7 @@
                 </div>
                 <h3 class="highlight__subtitle">Easy and Quick</h3>
                 <p class="highlight__para">
-                  Get access to the book you purchase online instantly
+                  Get access to the book you purchase online instantly.
                 </p>
               </div>
               <div class="highlight">
@@ -105,7 +110,7 @@
             <div class="books">
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/fbbam.jpg" alt="" />
+                  <img class="book__img" src="./assets/genre/romance/fbbam.jpg" alt="" />
                 </figure>
                 <div class="book__title">Four Bad Boys and Me</div>
                 <div class="book__ratings">
@@ -121,7 +126,7 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/jonaxxx.jpg" alt="" />
+                  <img class="book__img" src="./assets/genre/romance/jonaxxx.jpg" alt="" />
                 </figure>
                 <div class="book__title">Every Beast Needs A Beauty</div>
                 <div class="book__ratings">
@@ -137,7 +142,7 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/ghnn.jpg" alt="" />
+                  <img class="book__img" src="./assets/genre/romance/ghnn.jpg" alt="" />
                 </figure>
                 <div class="book__title">The Girl He Never Noticed</div>
                 <div class="book__ratings">
@@ -153,7 +158,7 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/hellu.webp" alt="" />
+                  <img class="book__img" src="./assets/genre/horror/hellu.webp" alt="" />
                 </figure>
                 <div class="book__title">Hell University</div>
                 <div class="book__ratings">
@@ -182,7 +187,7 @@
               <div class="books">
                 <div class="book">
                     <figure class="book__img--wrapper">
-         <img class="book__img" src="./assets/book-1.jpeg" alt="">
+         <img class="book__img" src="./assets/genre/business/book-1.jpeg" alt="">
          </figure>
          <div class="book__title">The 10X Rule</div>
        <div class="book__ratings">
@@ -197,8 +202,8 @@
     </div>
     </div>
 <div class="book">
-                    <figure class="book__img--wrapper">
-         <img class="book__img" src="./assets/book-2.jpeg" alt="">
+<figure class="book__img--wrapper">
+         <img class="book__img" src="./assets/genre/business/book-2.jpeg" alt="">
          </figure>
          <div class="book__title">Be Obsessed or Be Average</div>
        <div class="book__ratings">
@@ -214,7 +219,7 @@
     </div>
 <div class="book">
                     <figure class="book__img--wrapper">
-         <img class="book__img" src="./assets/book-3.jpeg" alt="">
+         <img class="book__img" src="./assets/genre/business/book-3.jpeg" alt="">
          </figure>
          <div class="book__title">Rich Dad Poor Dad</div>
        <div class="book__ratings">
@@ -230,7 +235,7 @@
     </div>
 <div class="book">
                     <figure class="book__img--wrapper">
-         <img class="book__img" src="./assets/book-4.jpeg" alt="">
+         <img class="book__img" src="./assets/genre/business/book-4.jpeg" alt="">
          </figure>
          <div class="book__title">Cashflow Quadrant</div>
        <div class="book__ratings">
@@ -246,7 +251,7 @@
     </div>
 <div class="book">
                     <figure class="book__img--wrapper">
-         <img class="book__img" src="./assets/book-5.jpeg" alt="">
+         <img class="book__img" src="./assets/genre/business/book-5.jpeg" alt="">
          </figure>
          <div class="book__title">The 48 Laws of Power</div>
        <div class="book__ratings">
@@ -262,7 +267,7 @@
     </div>
 <div class="book">
                     <figure class="book__img--wrapper">
-         <img class="book__img" src="./assets/book-6.jpeg" alt="">
+         <img class="book__img" src="./assets/genre/business/book-6.jpeg" alt="">
          </figure>
          <div class="book__title">The 5 Second Rule</div>
        <div class="book__ratings">
@@ -278,7 +283,7 @@
     </div>
 <div class="book">
                     <figure class="book__img--wrapper">
-         <img class="book__img" src="./assets/book-7.jpg" alt="">
+         <img class="book__img" src="./assets/genre/business/book-7.jpg" alt="">
          </figure>
          <div class="book__title">Your Next Five Moves</div>
        <div class="book__ratings">
@@ -294,7 +299,7 @@
     </div>
 <div class="book">
                     <figure class="book__img--wrapper">
-         <img class="book__img" src="./assets/book-8.jpeg" alt="">
+         <img class="book__img" src="./assets/genre/business/book-8.jpeg" alt="">
          </figure>
          <div class="book__title">Mastery</div>
        <div class="book__ratings">
@@ -316,16 +321,19 @@
         </div>
         
       </section>
+
+
 <section id="section__explore">
     <div class="container">
         <div class="row row__column">
             <h2>Explore more <span class="purple">Books</span></h2>
-            <a href="#features">
-            <button class="btn">Browse books</button>
-        </a>
+            <a href="books.html" target="_blank">
+                <button class="btn">Browse books</button>
+            </a>
         </div>
     </div>
 </section>
+
      
     </main>
 
@@ -339,11 +347,11 @@
             </a>
             <div class="footer__list">
 <a href="#" class="footer__link">Home</a>
-<a href="" class="footer__link no-cursor">About</a>
+<a href="#highlights" class="footer__link no-cursor">About</a>
 <a href="#features" class="footer__link">Books</a>
 <a href="" class="footer__link no-cursor">Contact</a>
             </div>
-            <div class="footer__copyright">Copyright &copy; 2024 Book Haven</div>
+            <div class="footer__copyright">Copyright &copy; 2024 Library ni Mae </div>
             </div>
         </div>
     </footer>

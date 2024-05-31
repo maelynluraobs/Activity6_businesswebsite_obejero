@@ -55,6 +55,7 @@ a:hover {
 
 .logo {
     width: 160px;
+    height: auto;
 }
 ul {
     display: flex;
@@ -177,7 +178,7 @@ padding-top: 24px;
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 50px;
     color: #7342d6;
     margin-bottom: 24px;
     text-align: center;
@@ -185,7 +186,7 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 32px;
 }
@@ -232,6 +233,43 @@ button:active {
     cursor: not-allowed;
 }
 
+/* 
+DROPDOWN BOOKS
+ */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover.dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover.nav__link {
+    background-color: #853e8e;
+  }
+
+  
 /* 
 HIGHLIGHTS
  */
@@ -358,6 +396,308 @@ top: 1px;
 #section__explore {
     background-color: rgba(115, 66, 214, 0.1);
 }
+
+
+
+
+
+
+
+
+
+
+
+/*
+BOOKS
+*/
+
+
+#scene {
+    display: flex;
+    width: 100%;
+  }
+  
+  #left-zone {
+    width: 30%;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  ul.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li.item {
+    margin-bottom: 10px;
+  }
+  
+  li.item input[type="radio"] {
+    display: none;
+  }
+  
+  li.item label {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  li.item input[type="radio"]:checked + label {
+    background-color: #e0e0e0;
+    border-color: #888;
+  }
+  
+  #middle-border {
+    width: 2px;
+    background-color: #ddd;
+    margin: 0 20px;
+  }
+  
+  #right-zone {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  .content {
+    display: none;
+  }
+  
+  input[type="radio"]:checked ~ #right-zone .content {
+    display: none;
+  }
+  
+  input[type="radio"]:checked + label + .content {
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CAROUSEL*/
+
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .carousel {
+    display: none; /* Initially hide the carousel */
+  }
+  
+  /* Style for different genre carousels */
+  .carousel[data-genre="horror"] {
+    background-color: darkred;
+  }
+  
+  .carousel[data-genre="business"] {
+    background-color: #007bff;
+  }
+  
+  .carousel[data-genre="fantasy"] {
+    background-color: darkgreen;
+  }
+  
+  .carousel[data-genre="romance"] {
+    background-color: pink;
+  }
+  
+  .carousel[data-genre="filipino"] {
+    background-color: #ff6600;
+  }
+  
+
+
+
+
+
+
+
+
+/* contact */ 
+
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 13.5rem 0 8.5rem;
+  }
+  
+  .contact:before,
+  .contact:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+  }
+  
+  .contact:before {
+    top: 0;
+    height: 40%;
+    background: none;
+  }
+  
+  .contact:after {
+    top: 40%;
+    height: 60%;
+    background: url("../img/contact-bg.png") center bottom / cover;
+  }
+  
+  .contact-box {
+    width: 100%;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5.5rem 4.5rem;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-info {
+    padding-right: 2rem;
+    padding-bottom: 3.2rem;
+    color: black;
+  }
+  
+  .contact .btn {
+    color: black;
+  }
+  .contact-form {
+    padding-left: 2rem;
+  }
+  
+  .contact-info .title:after {
+    left: 0;
+    transform: initial;
+  }
+  
+  .information-wrap {
+    margin-top: 2rem;
+  }
+  
+  .information {
+    display: flex;
+    align-items: center;
+  }
+  
+  .information:not(:last-child) {
+    margin-bottom: 1.3rem;
+  }
+  
+  .contact-icon {
+    min-width: 67px;
+    height: 67px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
+  
+  .contact-icon i {
+    line-height: 67px;
+  }
+  
+  .info-text {
+    font-size: 1.3rem;
+    display: inline-block;
+  }
+  
+  .contact-form .title:after {
+    display: none;
+  }
+  
+  .contact-form .title {
+    margin: 0;
+  }
+  
+  .contact-form .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-column-gap: 0.6rem;
+  }
+  
+  .contact-input {
+    padding: 1.2rem 2.1rem;
+    margin: 0.6rem 0;
+    border: none;
+    outline: none;
+    background: #f3f3f3;
+    border-radius:  0.3rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: 0.3s;
+  }
+  
+  .contact-input::placeholder {
+    font-weight: 400;
+  }
+  
+  .contact-input.textarea {
+    resize: none;
+    min-height: 280px;
+    border-radius: 5px;
+  }
+  
+  .contact-input:hover {
+    background: #ececec;
+  }
+  
+  .contact-input:focus {
+    background: #eaeaea;
+  }
+  
+  .contact-input .btn {
+    margin-top: 0.6rem;
+  }
+
+  .contact-input .btn:hover{
+    color: #33473e;
+  }
+  
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
 
 /* 
 FOOTER

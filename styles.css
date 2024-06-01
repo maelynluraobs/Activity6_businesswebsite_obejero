@@ -239,6 +239,19 @@ button:active {
 /* 
 DROPDOWN BOOKS
  */
+
+ /* button sa books  */
+
+ .btn-outline-primary genre-button {
+  color: #7342d6;
+  border-color: #7342d6;
+}
+
+.btn-outline-primary genre-button:hover {
+  background-color: #7342d6;
+  color: #ffffff;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -411,11 +424,13 @@ top: 1px;
 
 
 /*
-BOOKS
+BOOKS.html
 */
 
 
-#scene {
+
+
+#browks {
     display: flex;
     width: 100%;
   }
@@ -452,6 +467,12 @@ BOOKS
     background-color: #e0e0e0;
     border-color: #888;
   }
+
+  .section__title{
+    text-align: center;
+    display: flex;
+    justify-content:center
+  }
   
   #middle-border {
     width: 2px;
@@ -479,6 +500,39 @@ BOOKS
 
 
 
+/* BUTTON ZONE */
+
+.carouselcontainer {
+  background-color: white;
+  max-width: 750px;
+  margin: auto;
+  padding: 20px;
+ text-align: center;
+}
+.btn-group > button {
+height: 45%;
+justify-content: center;
+text-align: center;
+color: white !important;
+background-color: #6441A4;
+border-radius: 12%;
+
+border-color: #4B317B !important;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+}
+
+.btn-group > button:hover {
+border-radius: 12%;
+
+background-color: white;
+color: #6441A4 !important;
+border-color: #4B317B !important;
+}
+
+button:active {
+outline: none;
+}
 
 
 
@@ -504,14 +558,14 @@ BOOKS
 
 /*CAROUSEL*/
 
-.carousel-container {
+.carouselcontainer {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
   }
   
   .carousel {
-    display: none; /* Initially hide the carousel */
+    display: none; 
   }
   
   /* Style for different genre carousels */
@@ -753,8 +807,18 @@ FOOTER
 
 /* SMALL PHONES, LARGE SMARTPHONES */
  @media (max-width: 550px) {
+  /* .nav__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
     .nav__links {
         display: none;
+    }
+
+    .nav__link:hover {
+      background-color: #6441a4; 
     }
 
     .btn__menu {
@@ -769,4 +833,5 @@ FOOTER
     .highlight:not(:last-child) {
         margin-bottom: 24px;
     }
+    
  }

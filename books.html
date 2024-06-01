@@ -10,6 +10,12 @@
     <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
     <!-- Include Slick Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
@@ -25,6 +31,14 @@
           <li><a class="nav__link" href="contact.html">Contact</a></li>
           <li><a class="nav__link nav__link--primary" href="books.html">Books</a></li>
         </ul>
+        <button class="btn__menu" onclick="openMenu()"> 
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+            </div>
       </div>
     </nav>
 
@@ -38,28 +52,27 @@
       <section id="browks">
         <div class="container">
             <div class="row">
-                <h2 class="section__title">
-                    Browse More <span class="purple">Books</span>
+              <div class="container d-flex justify-content-center align-items-center">
+                <h2 class="section__title text-center">
+                    Browse More Books!
                 </h2>
+            </div>
+            
+                </div>
 
- <!-- Genre Buttons -->
- <div class="genre-buttons">
-  <button class="genre-button" data-genre="all">All</button>
-  <button class="genre-button" data-genre="business">Business</button>
-  <button class="genre-button" data-genre="fantasy">Fantasy</button>
-  <button class="genre-button" data-genre="filipino">Filipino</button>
-  <button class="genre-button" data-genre="horror">Horror</button>
-  <button class="genre-button" data-genre="romance">Romance</button>
-</div>
-
-
-
-
-
-
-
-
-
+                <div class="container" > 
+                  <div class="carouselcontainer mt-1">
+                      <div class="btn-group genre-buttons" role="group" aria-label="Genre buttons">
+                          <button type="button" class="btn btn-outline-primary genre-button" data-genre="all">All</button>
+                          <button type="button" class="btn btn-outline-primary genre-button" data-genre="business">Business</button>
+                          <button type="button" class="btn btn-outline-primary genre-button" data-genre="fantasy">Fantasy</button>
+                          <button type="button" class="btn btn-outline-primary genre-button" data-genre="filipino">Filipino</button>
+                          <button type="button" class="btn btn-outline-primary genre-button" data-genre="horror">Horror</button>
+                          <button type="button" class="btn btn-outline-primary genre-button" data-genre="romance">Romance</button>
+                      </div>
+                  </div>
+                </div>
+                  
 
 
   <!---**********************************************************************************************/ -->
@@ -67,24 +80,15 @@
 
 
 
-
-
-
-
 <!-- Book Carousel -->
 
-
-
+<!-- <div class="row pt-5 mt-2 pb-5">
+  <div class="col text-center">
+      <h2 class=" text-black font-weight-bold"> Business </h2>
+      <hr class="spliter">
+  </div>
+</div> -->
 <div class="book__carousel">
-
-
-  <div class="row pt-5 mt-2 pb-5">
-    <div class="col text-center">
-        <h2 class=" text-white font-weight-bold"> Business </h2>
-        <hr class="spliter">
-    </div>
-
-
   <div class="books" data-genre="business">
     <div class="book">
       <figure class="book__img--wrapper">
@@ -103,142 +107,137 @@
       </div>
     </div>
 
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/business/book-2.jpeg" alt="">
+      </figure>
+      <div class="book__title">Be Obsessed or Be Average</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $14.45
+      </div>
+    </div>
 
     <div class="book">
       <figure class="book__img--wrapper">
-               <img class="book__img" src="./assets/genre/business/book-2.jpeg" alt="">
-               </figure>
-               <div class="book__title">Be Obsessed or Be Average</div>
-             <div class="book__ratings">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half"></i>
-             </div>
-             <div class="book__price">
-             <span class="book__price--normal">$44.95</span> $14.45
-          </div>
-          </div>
-      <div class="book">
-                          <figure class="book__img--wrapper">
-               <img class="book__img" src="./assets/genre/business/book-3.jpeg" alt="">
-               </figure>
-               <div class="book__title">Rich Dad Poor Dad</div>
-             <div class="book__ratings">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half"></i>
-             </div>
-             <div class="book__price">
-             <span class="book__price--normal">$44.95</span> $14.45
-          </div>
-          </div>
-      <div class="book">
-                          <figure class="book__img--wrapper">
-               <img class="book__img" src="./assets/genre/business/book-4.jpeg" alt="">
-               </figure>
-               <div class="book__title">Cashflow Quadrant</div>
-             <div class="book__ratings">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half"></i>
-             </div>
-             <div class="book__price">
-             <span class="book__price--normal">$44.95</span> $14.45
-          </div>
-          </div>
-      <div class="book">
-        <figure class="book__img--wrapper">
-               <img class="book__img" src="./assets/genre/business/book-5.jpeg" alt="">
-               </figure>
-               <div class="book__title">The 48 Laws of Power</div>
-             <div class="book__ratings">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half"></i>
-             </div>
-             <div class="book__price">
-             <span class="book__price--normal">$44.95</span> $14.45
-          </div>
-          </div>
-      <div class="book">
-                          <figure class="book__img--wrapper">
-               <img class="book__img" src="./assets/genre/business/book-6.jpeg" alt="">
-               </figure>
-               <div class="book__title">The 5 Second Rule</div>
-             <div class="book__ratings">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half"></i>
-             </div>
-             <div class="book__price">
-             <span class="book__price--normal">$44.95</span> $14.45
-          </div>
-          </div>
-      <div class="book">
-          <figure class="book__img--wrapper">
-          <img class="book__img" src="./assets/genre/business/book-7.jpg" alt="">
-          </figure>
-               <div class="book__title">Your Next Five Moves</div>
-             <div class="book__ratings">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half"></i>
-             </div>
-             <div class="book__price">
-             <span class="book__price--normal">$44.95</span> $14.45
-          </div>
-          </div>
-      <div class="book">
-        <figure class="book__img--wrapper">
-          <img class="book__img" src="./assets/genre/business/book-8.jpeg" alt="">
-        </figure>
-          <div class="book__title">Mastery</div>
-          <div class="book__ratings">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half"></i>
-             </div>
-             <div class="book__price">
-             <span class="book__price--normal">$44.95</span> $14.45
-          </div>
-          </div>
-                      </figure>
-                  </div>
-                    </div>
-                    
-                 
-    
-
-    
-  </div>
-
-
-  <div class="book__carousel">
-    <div class="row pt-5 mt-2 pb-5">
-      <div class="col text-center">
-          <h2 class=" text-white font-weight-bold"> Fantasy </h2>
-          <hr class="spliter">
+        <img class="book__img" src="./assets/genre/business/book-3.jpeg" alt="">
+      </figure>
+      <div class="book__title">Rich Dad Poor Dad</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
       </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $14.45
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/business/book-4.jpeg" alt="">
+      </figure>
+      <div class="book__title">Cashflow Quadrant</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $14.45
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/business/book-5.jpeg" alt="">
+      </figure>
+      <div class="book__title">The 48 Laws of Power</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $14.45
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/business/book-6.jpeg" alt="">
+      </figure>
+      <div class="book__title">The 5 Second Rule</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $14.45
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/business/book-7.jpg" alt="">
+      </figure>
+      <div class="book__title">Your Next Five Moves</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $14.45
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/business/book-8.jpeg" alt="">
+      </figure>
+      <div class="book__title">Mastery</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $14.45
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="book__carousel"> 
+
+  <!-- <div class="row pt-5 mt-2 pb-5">
+    <div class="col text-center">
+        <h2 class=" text-black font-weight-bold"> Fantasy </h2>
+        <hr class="spliter">
+    </div>  
+  </div> -->
+
   <div class="books" data-genre="fantasy"> 
-
-
-    
-
     <div class="book">
       <figure class="book__img--wrapper">
         <img class="book__img" src="./assets/genre/fantasy/hpSorcerer’s Stone.jpg" alt="Harry Potter and the Sorcerer’s Stone">
@@ -290,9 +289,6 @@
       </div>
     </div>
 
-
-
-
     <div class="book">
       <figure class="book__img--wrapper">
         <img class="book__img" src="./assets/genre/fantasy/lourd.jpg" alt="The Lord of the Rings">
@@ -308,7 +304,6 @@
       <div class="book__price">
         <span class="book__price--normal">$44.95</span> $14.45
       </div>
-      
     </div>
 
     <div class="book">
@@ -322,11 +317,10 @@
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star-half"></i>
-           </div>
-           <div class="book__price">
-           <span class="book__price--normal">$44.95</span> $14.45
-        </div>
-      
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $14.45
+      </div>
     </div>
 
     <div class="book">
@@ -340,11 +334,10 @@
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star-half"></i>
-           </div>
-           <div class="book__price">
-           <span class="book__price--normal">$44.95</span> $14.45
-        </div>
-      
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $14.45
+      </div>
     </div>
 
     <div class="book">
@@ -358,13 +351,13 @@
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star-half"></i>
-           </div>
-           <div class="book__price">
-           <span class="book__price--normal">$44.95</span> $14.45
-        </div>
-      
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $14.45
+      </div>
     </div>
   </div>
+</div>
 
 
 
@@ -389,331 +382,298 @@
 
 
 
-
-
-
-
-
-
-  <div class="book__carousel">
-  <div class="row pt-5 mt-2 pb-5">
-    <div class="col text-center">
-        <h2 class=" text-white font-weight-bold"> Filipino </h2>
+<div class="book__carousel">
+  <div class="books" data-genre="filipino">
+    <!-- <div class="row pt-5 mt-2 pb-5">
+      <div class="col text-center">
+        <h2 class=" text-black font-weight-bold"> Filipino </h2>
         <hr class="spliter">
-    </div>
-  
-    <div class="books" data-genre="filipino">
-   
-
-        
-
-          <div class="book">
-            <figure class="book__img--wrapper">
-              <img class="book__img" src="./assets/genre/filipino/elfili.jpg" alt="El Fiilbusterismo">
-            </figure>
-            <div class="book__title">El Fiilbusterismo</div>
-            <div class="book__ratings">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half"></i>
-                 </div>
-                 <div class="book__price">
-                 <span class="book__price--normal">$44.95</span> $10.00
-              </div>
-            
-          </div>
-
-
-          <div class="book">
-            <figure class="book__img--wrapper">
-              <img class="book__img" src="./assets/genre/filipino/noli.jpg" alt="Noli Me Tangere">
-            </figure>
-            <div class="book__title">Noli Me Tangere</div>
-            <div class="book__ratings">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half"></i>
-                 </div>
-                 <div class="book__price">
-                 <span class="book__price--normal">$44.95</span> $10.00
-              </div>
-            
-          </div>
-
-          
-          <div class="book">
-            <figure class="book__img--wrapper">
-              <img class="book__img" src="./assets/genre/filipino/ily.jpg" alt="I Love You Since 1892">
-            </figure>
-            <div class="book__title">I Love You Since 1892</div>
-            <div class="book__ratings">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half"></i>
-                 </div>
-                 <div class="book__price">
-                 <span class="book__price--normal">$44.95</span> $32.19
-              </div>
-            
-          </div>
+      </div> -->
+      
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/filipino/elfili.jpg" alt="El Filibusterismo">
+      </figure>
+      <div class="book__title">El Filibusterismo</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
       </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $10.00
+      </div>
+    </div>
 
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/filipino/noli.jpg" alt="Noli Me Tangere">
+      </figure>
+      <div class="book__title">Noli Me Tangere</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $10.00
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/filipino/ily.jpg" alt="I Love You Since 1892">
+      </figure>
+      <div class="book__title">I Love You Since 1892</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $32.19
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="book__carousel">
+  <div class="books" data-genre="horror">
+    <!-- <div class="row pt-5 mt-2 pb-5">
+      <div class="col text-center">
+        <h2 class="text-black font-weight-bold"> Horror </h2>
+        <hr class="spliter">
+      </div> -->
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/horror/dracula.webp" alt="Dracula">
+      </figure>
+      <div class="book__title">Dracula</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $10.00
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/horror/Exorcist.jpg" alt="The Exorcist">
+      </figure>
+      <div class="book__title">The Exorcist</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $10.00
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/horror/flowersintheattic.jpg" alt="Flowers in the Attic">
+      </figure>
+      <div class="book__title">Flowers in the Attic</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $10.00
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/horror/frankenstein.jpg" alt="Frankenstein">
+      </figure>
+      <div class="book__title">Frankenstein</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $32.19
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/horror/hellu.webp" alt="Hell University">
+      </figure>
+      <div class="book__title">Hell University</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $5.20
+      </div>
+    </div>
+
+    <div class="book">
+      <figure class="book__img--wrapper">
+        <img class="book__img" src="./assets/genre/horror/shining.jpg" alt="The Shining">
+      </figure>
+      <div class="book__title">The Shining</div>
+      <div class="book__ratings">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <div class="book__price">
+        <span class="book__price--normal">$44.95</span> $17.98
+      </div>
+    </div>
 
   </div>
-    </div>
-
-
-    <div class="book__carousel">
-      <div class="row pt-5 mt-2 pb-5">
-        <div class="col text-center">
-            <h2 class=" text-white font-weight-bold"> Horror </h2>
-            <hr class="spliter">
-        </div>
-      
-        <div class="books" data-genre="horror">
-              <div class="book">
-                <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/genre/horror/dracula.webp" alt="Dracula">
-                </figure>
-                <div class="book__title"> Dracula</div>
-                <div class="book__ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half"></i>
-                     </div>
-                     <div class="book__price">
-                     <span class="book__price--normal">$44.95</span> $10.00
-                  </div>
-                
-              </div>
-    
-    
-              <div class="book">
-                <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/genre/horror/Exorcist.jpg" alt="The Exorcist">
-                </figure>
-                <div class="book__title">The Exorcist</div>
-                <div class="book__ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half"></i>
-                     </div>
-                     <div class="book__price">
-                     <span class="book__price--normal">$44.95</span> $10.00
-                  </div>
-                
-              </div>
-    
-              
-              <div class="book">
-                <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/genre/horror/flowersintheattic.jpg" alt="Flowers in the Attic">
-                </figure>
-                <div class="book__title">Flowers in the Attic</div>
-                <div class="book__ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half"></i>
-                     </div>
-                     <div class="book__price">
-                     <span class="book__price--normal">$44.95</span> $10.00
-                  </div>
-                
-              </div>
-    
-              <div class="book">
-                <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/genre/horror/frankenstein.jpg" alt="Frankenstein">
-                </figure>
-                <div class="book__title">Frankenstein</div>
-                <div class="book__ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half"></i>
-                     </div>
-                     <div class="book__price">
-                     <span class="book__price--normal">$44.95</span> $32.19
-                  </div>
-                
-              </div>
-
-              <div class="book">
-                <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/genre/horror/hellu.webp" alt="Hell University">
-                </figure>
-                <div class="book__title">Hell University</div>
-                <div class="book__ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half"></i>
-                     </div>
-                     <div class="book__price">
-                     <span class="book__price--normal">$44.95</span> $5.20
-                  </div>
-                
-              </div>
-              <div class="book">
-                <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/genre/horror/shining.jpg" alt="The Shining ">
-                </figure>
-                <div class="book__title">The Shining </div>
-                <div class="book__ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half"></i>
-                     </div>
-                     <div class="book__price">
-                     <span class="book__price--normal">$44.95</span> $17.98
-                  </div>
-                
-              </div>
-    
-    
-    
-      </div>
-        </div>
-
+</div>
 
  
         <div class="book__carousel">
-          <div class="row pt-5 mt-2 pb-5">
-            <div class="col text-center">
-                <h2 class=" text-white font-weight-bold"> Romance </h2>
+          <div class="books" data-genre="romance">
+            <!-- <div class="row pt-5 mt-2 pb-5">
+              <div class="col text-center">
+                <h2 class="text-black font-weight-bold"> Romance </h2>
                 <hr class="spliter">
+              </div> -->
+            
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/genre/romance/fbbam.jpg" alt="Four Bad Boys and Me">
+              </figure>
+              <div class="book__title">Four Bad Boys and Me</div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$44.95</span> $10.00
+              </div>
             </div>
-          
-            <div class="books" data-genre="romance">
-                  <div class="book">
-                    <figure class="book__img--wrapper">
-                      <img class="book__img" src="./assets/genre/romance/fbbam.jpg" alt="Four Bad Boys and Me">
-                    </figure>
-                    <div class="book__title"> Four Bad Boys and Me</div>
-                    <div class="book__ratings">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half"></i>
-                         </div>
-                         <div class="book__price">
-                         <span class="book__price--normal">$44.95</span> $10.00
-                      </div>
-                    
-                  </div>
         
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/genre/romance/fbbam2.jpg" alt="The Good Girl's Revenge">
+              </figure>
+              <div class="book__title">The Good Girl's Revenge</div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$44.95</span> $15.00
+              </div>
+            </div>
         
-                  <div class="book">
-                    <figure class="book__img--wrapper">
-                      <img class="book__img" src="./assets/genre/romance/fbbam2.jpg" alt="The Good Girl's Revenge">
-                    </figure>
-                    <div class="book__title">The Good Girl's Revenge</div>
-                    <div class="book__ratings">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half"></i>
-                         </div>
-                         <div class="book__price">
-                         <span class="book__price--normal">$44.95</span> $15.00
-                      </div>
-                    
-                  </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/genre/romance/ghnn.jpg" alt="The Girl He Never Noticed">
+              </figure>
+              <div class="book__title">The Girl He Never Noticed</div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$44.95</span> $20.00
+              </div>
+            </div>
         
-                  
-                  <div class="book">
-                    <figure class="book__img--wrapper">
-                      <img class="book__img" src="./assets/genre/romance/ghnn.jpg" alt="">
-                    </figure>
-                    <div class="book__title">The Girl He Never Noticed</div>
-                    <div class="book__ratings">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half"></i>
-                         </div>
-                         <div class="book__price">
-                         <span class="book__price--normal">$44.95</span> $20.00
-                      </div>
-                    
-                  </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/genre/romance/hesintoher.jpg" alt="He's Into Her">
+              </figure>
+              <div class="book__title">He's Into Her</div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$44.95</span> $32.19
+              </div>
+            </div>
         
-                  <div class="book">
-                    <figure class="book__img--wrapper">
-                      <img class="book__img" src="./assets/genre/romance/hesintoher.jpg" alt="He's Into Her">
-                    </figure>
-                    <div class="book__title">He's Into Her</div>
-                    <div class="book__ratings">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half"></i>
-                         </div>
-                         <div class="book__price">
-                         <span class="book__price--normal">$44.95</span> $32.19
-                      </div>
-                    
-                  </div>
-    
-                  <div class="book">
-                    <figure class="book__img--wrapper">
-                      <img class="book__img" src="./assets/genre/romance/jonaxxx.jpg" alt="Every Beast Needs A Beauty">
-                    </figure>
-                    <div class="book__title">Every Beast Needs A Beauty</div>
-                    <div class="book__ratings">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half"></i>
-                         </div>
-                         <div class="book__price">
-                         <span class="book__price--normal">$44.95</span> $5.20
-                      </div>
-                    
-                  </div>
-                  <div class="book">
-                    <figure class="book__img--wrapper">
-                      <img class="book__img" src="./assets/genre/romance/teenclash.jpg" alt="Teen Clash ">
-                    </figure>
-                    <div class="book__title">Teen Clash </div>
-                    <div class="book__ratings">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half"></i>
-                         </div>
-                         <div class="book__price">
-                         <span class="book__price--normal">$44.95</span> $9.20
-                      </div>
-                    
-                  </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/genre/romance/jonaxxx.jpg" alt="Every Beast Needs A Beauty">
+              </figure>
+              <div class="book__title">Every Beast Needs A Beauty</div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$44.95</span> $5.20
+              </div>
+            </div>
         
-        
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/genre/romance/teenclash.jpg" alt="Teen Clash">
+              </figure>
+              <div class="book__title">Teen Clash</div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$44.95</span> $9.20
+              </div>
+            </div>
         
           </div>
-            </div>
+        </div>
+        
+
+        </div>
     
     
     
@@ -747,7 +707,7 @@
             <a href="index.html" class="footer__link">Home</a>
             <a href="index.html#about" class="footer__link no-cursor">About</a>
             <a href="books.html" class="footer__link">Books</a>
-            <a href="index.html#contact" class="footer__link no-cursor">Contact</a>
+            <a href="contact.html" class="footer__link no-cursor">Contact</a>
           </div>
           <div class="footer__copyright">Copyright &copy; 2024 library</div>
         </div>

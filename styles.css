@@ -52,6 +52,9 @@ a:hover {
 .purple {
     color: #7342d6;
 }
+.black{
+  color:black;
+}
 
 .logo {
     width: 160px;
@@ -545,7 +548,7 @@ BOOKS
 .contact {
     position: relative;
     width: 100%;
-    padding: 13.5rem 0 8.5rem;
+    padding: 1.5rem 0 8.5rem;
   }
   
   .contact:before,
@@ -587,7 +590,7 @@ BOOKS
   }
   
   .contact .btn {
-    color: black;
+    color: white;
   }
   .contact-form {
     padding-left: 2rem;

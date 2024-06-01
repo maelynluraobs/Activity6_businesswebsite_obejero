@@ -1,111 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contacts </title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-      </head>
-      
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts </title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+</head>
+
 <body>
     <nav>
         <div class="nav__container">
-          <img class="logo" src="./assets/Library.svg" alt="Library Logo" />
-          <ul class="nav__links">
-            <li><a class="nav__link" href="index.html">Home</a></li>
-            <li><a class="nav__link" href="contact.html">Contact</a></li>
-            <li><a class="nav__link nav__link--primary" href="books.html" target="_blank">Books</a></li>
-          </ul>
+            <img class="logo" src="./assets/Library.svg" alt="Library Logo" />
+            <ul class="nav__links">
+                <li><a class="nav__link" href="index.html">Home</a></li>
+                <li><a class="nav__link" href="contact.html">Contact</a></li>
+                <li><a class="nav__link nav__link--primary" href="books.html" target="_blank">Books</a></li>
+            </ul>
         </div>
-      </nav>
-
-      <section class="contact" id="contact">
+    </nav>
+    <div class="header__container">
+      <div class="header__description">
+        <h1>
+          Thank you for choosing <span class="black">Library</span>
+        </h1>
+      </div>
+    </div>
+    <section class="contact" id="contact">
         <div class="container">
-          <div class="col-xs-12 col-sm-5 col-md-3 col-lg-6"></div>
-          <div class="contact-box">
-            <div class="contact-info">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h3 class="title">Get in touch</h3>
+                    <p class="text">Tell us your insight about Library.</p>
+                    <div class="information-wrap">
+                        <div class="information">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="info-text">Macabalan, Cagayan de Oro City, Philippines</p>
+                        </div>
 
-              <h3 class="title">Get in touch</h3>
-              <p class="text">
-                Tell us your insight about my page. 
-              </p>
-              <div class="row">
-              <div class="information-wrap">
-                <div class="information">
-                  <div class="contact-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <p class="info-text">Macabalan, Cagayan de Oro City, Philippines </p>
-                </div>
+                        <div class="information">
+                            <div class="contact-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <p class="info-text">maelyn.mei@gmail.com</p>
+                        </div>
 
-                <div class="information">
-                  <div class="contact-icon">
-                    <i class="fas fa-paper-plane"></i>
-                  </div>
-                  <p class="info-text">maelyn.mei@gmail.com</p>
-                </div>
+                        <div class="information">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <p class="info-text">09987654321</p>
+                        </div>
+                    </div>
+                    <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
+                        <div class="mt-4 w-100 aos-item__inner">
+                            <iframe class="hvr-shadow" width="100%" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+                        </div>
+                    </div>
+                
 
-                <div class="information">
-                  <div class="contact-icon">
-                    <i class="fas fa-phone-alt"></i>
-                  </div>
-                  <p class="info-text">09987654321</p>
+                
+                <div class="contact-form">
+                    <h3 class="title">Contact me</h3>
+                    <form id="contact-form">
+                        <div class="row">
+                            <input type="text" id="first-name" class="contact-input" placeholder="First Name" required />
+                            <input type="text" id="last-name" class="contact-input" placeholder="Last Name" required />
+                        </div>
+                        <div class="row">
+                            <input type="text" id="phone" class="contact-input" placeholder="Phone" required />
+                            <input type="email" id="email" class="contact-input" placeholder="Email" required />
+                        </div>
+                        <div class="row">
+                            <textarea id="message" name="message" class="contact-input textarea" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                    <div id="response-message" style="display: none;">Your message has been sent successfully!</div>
                 </div>
-              </div>
             </div>
-            </div>
-             
-            <hr> 
-
-              
-            <div class="contact-form">
-              <h3 class="title">Contact me</h3>
-              <form id="contact-form">
-                  <div class="row">
-                      <input type="text" id="first-name" class="contact-input" placeholder="First Name" required />
-                      <input type="text" id="last-name" class="contact-input" placeholder="Last Name" required />
-                  </div>
-                  <div class="row">
-                      <input type="text" id="phone" class="contact-input" placeholder="Phone" required />
-                      <input type="email" id="email" class="contact-input" placeholder="Email" required />
-                  </div>
-                  <div class="row">
-                      <textarea id="message" name="message" class="contact-input textarea" placeholder="Message" required></textarea>
-                  </div>
-                  <button type="submit" class="btn">Send</button>
-              </form>
-              <div id="response-message" style="display: none;">Your message has been sent successfully!</div>
-          </div>
-      </div>
-  </div>
-      </div>
+        </div>
+        </div>
     </section>
-      
+
     <footer>
-      <div class="container">
-          <div class="row row__column">
-              <a href="#">
-              <figure class="footer__logo">
-                  <img src="./assets/Library.svg" class="footer__logo--img" alt="">
-              </figure>
-          </a>
-          <div class="footer__list">
-<a href="#" class="footer__link">Home</a>
-<a href="#highlights" class="footer__link no-cursor">About</a>
-<a href="#features" class="footer__link">Books</a>
-<a href="" class="footer__link no-cursor">Contact</a>
-          </div>
-          <div class="footer__copyright">Copyright &copy; 2024 Library ni Mae </div>
-          </div>
-      </div>
-  </footer>
-    
+        <div class="container">
+            <div class="row row__column">
+                <a href="#">
+                    <figure class="footer__logo">
+                        <img src="./assets/Library.svg" class="footer__logo--img" alt="">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="#" class="footer__link">Home</a>
+                    <a href="#highlights" class="footer__link no-cursor">About</a>
+                    <a href="#features" class="footer__link">Books</a>
+                    <a href="" class="footer__link no-cursor">Contact</a>
+                </div>
+                <div class="footer__copyright">Copyright &copy; 2024 Library ni Mae </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
